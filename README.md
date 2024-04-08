@@ -25,11 +25,37 @@ To set up the Grade Calculator on your local machine, follow these steps:
    cd grade-calculator
 3. Open the index.html file in your browser to start using the application.
 
+## Syncing Your Fork
+To sync your fork with the original repository, you’ll need to add the original repository as an upstream remote:
+```bash
+git remote add upstream https://github.com/Harshit2012/Grade-Calculator.git
+ ```
+
+Fetch the branches and their respective commits from the upstream repository:
+```bash
+git fetch upstream
+```
+
+Check out your fork’s local default branch - usually main:
+```bash
+git checkout main
+```
+
+Merge the changes from the upstream default branch - usually main:
+```bash
+git merge upstream/main
+```
+
+Now, your local default branch is up-to-date with the original repository’s default branch.
+
 ## Usage
 Enter the marks for each subject in the provided input fields and click the ‘Calculate’ button. The application will display the average percentage and whether you have passed or failed.
 
-## Contributing
-Contributions are welcome! Feel free to open an issue or submit a pull request.
-
 ## Preview
 ![Screenshot (29)](https://github.com/Harshit2012/Grade-Calculator/assets/105143145/c8bdc9b2-7991-4621-aef8-6481fde38b5b)
+
+## Live Demo
+[Demo](https://harshit2012.github.io/Grade-Calculator/)
+
+## Contributing
+Contributions are welcome! Feel free to open an issue or submit a pull request.
